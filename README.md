@@ -1,5 +1,7 @@
 # KoshkinaEkaterina.github.io
-My web site
- * ![alt text](./assets/curriculum.png "CV") CV
- * ![alt text](./assets/diploma.png "Certifiactes") [Certificates](./certificates)
+My web site 
+ *  [Certificates](./certificates)
 
+| ![alt text](./assets/curriculum.png "CV") | ![alt text](./assets/diploma.png "Certifiactes")| 
+|:-----------------------------------------:|:-----------------------------------------------:|
+|                    CV                     |         [Certificates](./certificates)          |
