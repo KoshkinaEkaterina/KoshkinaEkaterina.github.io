@@ -5,7 +5,8 @@
 input[name="raz"] {display: none;}
 
 
-.gallery {position: relative; padding-top: 45%; margin: 0 2.3em; line-height: 0; border-bottom: 4em solid; background: no-repeat 50% 0; background-size: auto 100%;} /* стиль блока */ 
+.gallery {position: relative; padding-top: 45%; margin: 0 2.3em; line-height: 0; 
+          border-bottom: 4em solid; background: no-repeat 50% 0; background-size: auto 100%;} /* стиль блока */ 
 
 .gallery label {display: inline-block; width: 20%; height: 4em; margin-bottom: -4em; background: no-repeat 50% 50%; background-size: calc(100% - 4px) calc(100% - 4px); cursor: pointer;}
 .gallery label:hover {background-color: #686868;} /* стиль при наведении на миниатюру */ 
@@ -22,8 +23,8 @@ input[name="raz"] {display: none;}
  position: absolute; top: 40%; border-width: 2.3em 1em; border-style: solid;}
 #raz1:checked ~ .gallery label:nth-of-type(2):before, 
 #raz2:checked ~ .gallery label:nth-of-type(3):before,
-#raz3:checked ~ .gallery label:nth-of-type(4):before {content: ""; right: -2.3em; border-color: transparent transparent transparent #686868; box-shadow: -2px 0 0 -1px #000;}
-#raz1:checked ~ .gallery label:nth-of-type(5):before,
+#raz3:checked ~ .gallery label:nth-of-type(1):before {content: ""; right: -2.3em; border-color: transparent transparent transparent #686868; box-shadow: -2px 0 0 -1px #000;}
+#raz1:checked ~ .gallery label:nth-of-type(3):before,
 #raz2:checked ~ .gallery label:nth-of-type(1):before, 
 #raz3:checked ~ .gallery label:nth-of-type(2):before {content: ""; left: -2.3em; border-color: transparent #686868 transparent transparent; box-shadow: 2px 0 0 -1px #000;}
 
