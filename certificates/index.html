@@ -8,7 +8,10 @@ input[name="raz"] {display: none;}
 .gallery {position: relative; padding-top: 45%; margin: 0 2.3em; line-height: 0; 
           border-bottom: 4em solid; background: no-repeat 50% 0; background-size: auto 100%;} /* стиль блока */ 
 
-.gallery label {display: inline-block; width: 33.3%; height: 4em; margin-bottom: -4em; background: no-repeat 50% 50%; background-size: calc(100% - 4px) calc(100% - 4px); cursor: pointer;}
+.gallery label {
+  display: inline-block; width: 33.3%; height: 4em; margin-bottom: -4em; background: no-repeat 50% 50%;
+  /*background-size: calc(100% - 4px) calc(100% - 4px);*/ cursor: pointer;
+}
 .gallery label:hover {background-color: #686868;} /* стиль при наведении на миниатюру */ 
 #raz1:checked ~ .gallery label:nth-of-type(1), /* стиль активного пункта */ 
 #raz2:checked ~ .gallery label:nth-of-type(2),
