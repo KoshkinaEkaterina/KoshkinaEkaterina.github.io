@@ -1,0 +1,100 @@
+body {
+margin: 0;
+background-image: url(Marble.jpg);
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+height: 100vh;
+text-align: center;
+}
+.image-caption {
+  transform: translate(-50%, -50%);
+  position: absolute; 
+  top: 50%; 
+  left: 50%;
+  padding: 30px 50px;
+  background: rgba(255,255,255,.6);
+}
+.image-caption a {
+  text-decoration: none;
+  color: #212121;
+  transition: .25s ease-in-out;
+}
+.image-caption a:hover,
+.image-caption a:focus {
+  color: #f17d80;
+  outline: 0;
+}
+.category {
+  position: relative;
+  padding: 0 25px;
+  display: inline-block;
+}
+.category a {
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0 .75em;
+  line-height: 1.2em;
+  margin: 0 .3em;
+  letter-spacing: 2px;
+}
+.category:before, .category:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -2px;
+  width: 25px;
+  border-bottom: 2px solid;
+}
+.category:before {left: 0;}
+.category:after {right: 0;}
+.post-title {margin-bottom: 30px;}
+.post-title a {
+  text-transform: capitalize;
+  font-size: 26px;
+  letter-spacing: .05em;
+  font-weight: normal;
+  line-height: 1.35;
+}
+.post-readmore a {
+  display: inline-block;
+  padding: 5px 25px;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+.post-readmore a:hover {
+  background: #f17d80;
+  color: #fff;
+  border-color: #f17d80;
+}
+
+button {
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  width: 140px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 45px;
+  margin: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #524f4e;
+  background: white;
+  box-shadow: 0 8px 15px rgba(0,0,0,.1);
+  transition: .3s;
+}
+button:hover {
+  background: #2EE59D;
+  box-shadow: 0 15px 20px rgba(46,229,157,.4);
+  color: white;
+  transform: translateY(-7px);
+}
+
+
