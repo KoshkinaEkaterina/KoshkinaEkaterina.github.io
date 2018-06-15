@@ -1,0 +1,190 @@
+body {
+margin: 0;
+background-image: url(Marble.jpg);
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+height: 100vh;
+text-align: center;
+}
+.image-caption {
+  transform: translate(-50%, -50%);
+  position: absolute; 
+  top: 50%; 
+  left: 50%;
+  padding: 30px 50px;
+  background: rgba(255,255,255,.6);
+}
+.image-caption a {
+  text-decoration: none;
+  color: #212121;
+  transition: .25s ease-in-out;
+}
+.image-caption a:hover,
+.image-caption a:focus {
+  color: #f17d80;
+  outline: 0;
+}
+.category {
+  position: relative;
+  padding: 0 25px;
+  display: inline-block;
+}
+.category a {
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0 .75em;
+  line-height: 1.2em;
+  margin: 0 .3em;
+  letter-spacing: 2px;
+}
+.category:before, .category:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -2px;
+  width: 25px;
+  border-bottom: 2px solid;
+}
+.category:before {left: 0;}
+.category:after {right: 0;}
+.post-title {margin-bottom: 30px;}
+.post-title a {
+  text-transform: capitalize;
+  font-size: 26px;
+  letter-spacing: .05em;
+  font-weight: normal;
+  line-height: 1.35;
+}
+.post-readmore a {
+  display: inline-block;
+  padding: 5px 25px;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+.post-readmore a:hover {
+  background: #f17d80;
+  color: #fff;
+  border-color: #f17d80;
+}
+
+button {
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  width: 140px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 45px;
+  margin: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #524f4e;
+  background: white;
+  box-shadow: 0 8px 15px rgba(0,0,0,.1);
+  transition: .3s;
+}
+button:hover {
+  background: #2EE59D;
+  box-shadow: 0 15px 20px rgba(46,229,157,.4);
+  color: white;
+  transform: translateY(-7px);
+}
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  transition: .4s ease-in-out;
+}
+.kb a {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color: white;
+  position: relative;
+  background: #2EE59D;
+  display: block;
+  width: 200px;
+  height: 50px;
+  border-radius: 50px;
+  border: 2px solid transparent;
+  margin: 80px auto 0;
+}
+.kb a:hover {
+  background: white;
+  border: 2px solid #2EE59D;
+}
+/* skroem ikonku zagruzki do navedenija na knopku i text "Skachat" posle navedenija na knopku */
+span {
+  overflow: hidden;
+}
+span, em, i.fa {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 46px; /* za vychetem granic knopki */
+}
+em {
+  top: 0;
+  font-style: normal;
+}
+i.fa {
+  top: 100%; /* vniz */
+  font-size: 30px;
+  color: #3C4896;
+}
+a:hover em { 
+  top: -100%; /* vverch */
+}
+a:hover i.fa {
+  top: 0;
+}
+/* delajem podskazku prozracnoj i ubirajem jejo so stranicy, ctoby ona ne pojavljalas pri navedenii na na mesto, gde ona dolzna pojavitsja */
+a:before, a:after{
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+/* stili dlja vsplyvajushego texsta */
+a:before{
+  content: attr(data-tooltip);
+  width: 140px;
+  height: 40px;
+  line-height: 40px;
+  background: #2EE59D;
+  border-radius: 5px;
+  bottom: 90px;
+  left: calc(50% - 70px);
+}
+/* stili dlja strelki */
+a:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: #2EE59D;
+  bottom: 70px;
+  left: calc(50% - 10px);
+}
+a:hover:before, a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  transition: .2s ease-in-out .4s; /* sdelajem pojavlenije podskazki s zaderzkoj */
+}
+/* dobavlajem effekt dvizenija */
+a:hover:before {
+  bottom: 70px;
+}
+a:hover:after {
+  bottom: 50px;
+}
+
+
+
